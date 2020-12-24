@@ -1,7 +1,7 @@
 name: Continuous integration
 on: [push]
 jobs:
-  router:
+  router:''
     name: Saas-reid
     runs-on: ${{ matrix.operating.system }}
     strategy:
