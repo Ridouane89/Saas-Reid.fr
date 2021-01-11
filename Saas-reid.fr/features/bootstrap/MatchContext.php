@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Features;
+
+use Behat\Behat\Context\Context;
+use Behat\Behat\Tester\Exception\PendingException;
+
+class MatchContext implements Context
+{
+    /**
+     * @Then /^I can see the list of job seekers with the best compatibility with my job offer$/
+     */
+    public function iCanSeeTheListOfJobSeekersWithTheBestCompatibilityWithMyJobOffer()
+    {
+        throw new \Behat\Behat\Tester\Exception\PendingException();
+    }
+
+    /**
+     * @Given /^I want to look for job seekers that match with my$/
+     */
+    public function iWantToLookForJobSeekersThatMatchWithMy()
+    {
+        throw new \Behat\Behat\Tester\Exception\PendingException();
+    }
+
+    /**
+     * @When /^I select an offer$/
+     */
+    public function iSelectAnOffer()
+    {
+        throw new \Behat\Behat\Tester\Exception\PendingException();
+    }
+}
