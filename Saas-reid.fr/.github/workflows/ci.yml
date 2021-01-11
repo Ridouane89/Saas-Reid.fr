@@ -32,6 +32,25 @@ jobs:
           coverage: xdebug
           tools: php-cs-fixer, phpunit:${{ matrix.phpunit-versions }}
 
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - name: Cache composer dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+      - name: Install composer dependencies
+        run: |
+          php composer.phar install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+      - name: Run PHP Code Sniffer
+        run: php vendor/bin/phpcs
+      - name: Run Acceptance Tests
+        run: php vendor/behat/behat/bin/behat --config behat.yaml
+      - name: Run Tests
+        run: php vendor/bin/simple-phpunit --testsuite unit, integration
+
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
