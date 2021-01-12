@@ -3,22 +3,21 @@
 namespace App\Features;
 
 use Behat\Behat\Context\Context;
-use Behat\Behat\Tester\Exception\PendingException;
 
 class SendApplicationContext implements Context
 {
     /**
-     * @When /^I write and send my application$/
+     * @Given /^I want to send my application to a job$/
      */
-    public function iWriteAndSendMyApplication()
+    public function iWantToSendMyApplicationToAJob()
     {
         throw new \Behat\Behat\Tester\Exception\PendingException();
     }
 
     /**
-     * @Given /^I want to send my application to a job$/
+     * @When /^I write and send my application$/
      */
-    public function iWantToSendMyApplicationToAJob()
+    public function iWriteAndSendMyApplication()
     {
         throw new \Behat\Behat\Tester\Exception\PendingException();
     }

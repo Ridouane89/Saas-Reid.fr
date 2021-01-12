@@ -10,9 +10,9 @@
 
     <rule ref="PSR12"/>
 
-
     <file>src/</file>
     <file>tests/</file>
-    <file>features/bootstrap</file>
+    <file>features/bootstrap/</file>
+
 
 </ruleset>

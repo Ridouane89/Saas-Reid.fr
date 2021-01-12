@@ -3,7 +3,6 @@
 namespace App\Features;
 
 use Behat\Behat\Context\Context;
-use Behat\Behat\Tester\Exception\PendingException;
 
 class CloseApplicationContext implements Context
 {

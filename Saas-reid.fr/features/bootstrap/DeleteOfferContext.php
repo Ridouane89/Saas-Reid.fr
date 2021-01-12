@@ -3,18 +3,9 @@
 namespace App\Features;
 
 use Behat\Behat\Context\Context;
-use Behat\Behat\Tester\Exception\PendingException;
 
 class DeleteOfferContext implements Context
 {
-    /**
-     * @Then /^job seeker will no longer be able to apply for the job offer$/
-     */
-    public function jobSeekerWillNoLongerBeAbleToApplyForTheJobOffer()
-    {
-        throw new \Behat\Behat\Tester\Exception\PendingException();
-    }
-
     /**
      * @Given /^I want to delete an offer$/
      */
@@ -27,6 +18,14 @@ class DeleteOfferContext implements Context
      * @When /^I select the offer to delete it$/
      */
     public function iSelectTheOfferToDeleteIt()
+    {
+        throw new \Behat\Behat\Tester\Exception\PendingException();
+    }
+
+    /**
+     * @Then /^job seeker will no longer be able to apply for the job offer$/
+     */
+    public function jobSeekerWillNoLongerBeAbleToApplyForTheJobOffer()
     {
         throw new \Behat\Behat\Tester\Exception\PendingException();
     }

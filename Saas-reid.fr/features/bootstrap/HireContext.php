@@ -3,18 +3,9 @@
 namespace App\Features;
 
 use Behat\Behat\Context\Context;
-use Behat\Behat\Tester\Exception\PendingException;
 
 class HireContext implements Context
 {
-    /**
-     * @Then /^the job offer is archived$/
-     */
-    public function theJobOfferIsArchived()
-    {
-        throw new \Behat\Behat\Tester\Exception\PendingException();
-    }
-
     /**
      * @Given /^I want to hire a job seeker that applied for our job offer$/
      */
@@ -27,6 +18,14 @@ class HireContext implements Context
      * @When /^I hire him$/
      */
     public function iHireHim()
+    {
+        throw new \Behat\Behat\Tester\Exception\PendingException();
+    }
+
+    /**
+     * @Then /^the job offer is archived$/
+     */
+    public function theJobOfferIsArchived()
     {
         throw new \Behat\Behat\Tester\Exception\PendingException();
     }
