@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "behat/behat": {
         "version": "v3.8.1"
     },
@@ -23,6 +24,11 @@
             "./config/packages/test/dama_doctrine_test_bundle.yaml"
         ]
     },
+=======
+    "composer/package-versions-deprecated": {
+        "version": "1.11.99.1"
+    },
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -102,9 +108,12 @@
     "egulias/email-validator": {
         "version": "2.1.24"
     },
+<<<<<<< HEAD
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.0"
     },
+=======
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
     "laminas/laminas-code": {
         "version": "3.5.1"
     },
@@ -120,6 +129,12 @@
     "nikic/php-parser": {
         "version": "v4.10.4"
     },
+<<<<<<< HEAD
+=======
+    "ocramius/proxy-manager": {
+        "version": "2.10.0"
+    },
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
     },
@@ -156,6 +171,7 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+<<<<<<< HEAD
     "squizlabs/php_codesniffer": {
         "version": "3.0",
         "recipe": {
@@ -168,6 +184,8 @@
             "./phpcs.xml.dist"
         ]
     },
+=======
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
     "symfony/asset": {
         "version": "v5.2.1"
     },
@@ -541,6 +559,12 @@
     "twig/twig": {
         "version": "v3.1.1"
     },
+<<<<<<< HEAD
+=======
+    "webimpress/safe-writer": {
+        "version": "2.1.0"
+    },
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
     "webmozart/assert": {
         "version": "1.9.1"
     }

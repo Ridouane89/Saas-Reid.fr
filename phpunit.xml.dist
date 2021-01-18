@@ -2,7 +2,11 @@
 
 <!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
          xsi:noNamespaceSchemaLocation="vendor/bin/.phpunit/phpunit.xsd"
+=======
+         xsi:noNamespaceSchemaLocation="bin/.phpunit/phpunit.xsd"
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
          backupGlobals="false"
          colors="true"
          bootstrap="tests/bootstrap.php"
@@ -16,6 +20,7 @@
     </php>
 
     <testsuites>
+<<<<<<< HEAD
         <testsuite name="unit">
             <directory>tests</directory>
         </testsuite>
@@ -23,6 +28,9 @@
             <directory>tests</directory>
         </testsuite>
         <testsuite name="system">
+=======
+        <testsuite name="Project Test Suite">
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
             <directory>tests</directory>
         </testsuite>
     </testsuites>
@@ -33,6 +41,7 @@
         </whitelist>
     </filter>
 
+<<<<<<< HEAD
     <extensions>
             <extension class="DAMA\DoctrineTestBundle\PHPUnit\PHPUnitExtension" />
     </extensions>
@@ -47,4 +56,9 @@
         <log type="coverage-clover" target="var/clover" lowUpperBound="35" highLowerBound="70"  />
         <log type="junit" target="var/junit" lowUpperBound="35" highLowerBound="70"  />
     </logging>
+=======
+    <listeners>
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+    </listeners>
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
 </phpunit>

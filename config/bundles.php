@@ -12,5 +12,8 @@ return [
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Twig\Extra\TwigExtraBundle\TwigExtraBundle::class => ['all' => true],
+<<<<<<< HEAD
     DAMA\DoctrineTestBundle\DAMADoctrineTestBundle::class => ['test' => true],
+=======
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
 ];

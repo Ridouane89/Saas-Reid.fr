@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -13,8 +17,11 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+<<<<<<< HEAD
 
 ###> squizlabs/php_codesniffer ###
 /.phpcs-cache
 /phpcs.xml
 ###< squizlabs/php_codesniffer ###
+=======
+>>>>>>> 862305b00694c03e3cbe18043ad3c94ec482e3f3
